@@ -1,0 +1,50 @@
+//EXPRESS JS
+
+
+=> Express is fast, minimalist web framework for (NODE JS)
+=> Express is a server side or backend framework
+
+Makes building web application with Node.js MUCH easier
+Use for both server rendered apps as well as API/MicroServices
+
+
+//Basic Server Syntax
+
+const express = require('express')
+
+//Init express
+
+const app = express()
+
+//Create your endpoints/route Handlers
+app.get('/',function(req,res) {
+    res.send('Hello world')
+})
+
+//Listen on a port
+
+app.listen(5000)
+
+
+#Basic Route Handling
+
+=> Handling requests/routes in simple
+=> get(), post(), put(), delete(), etc
+=> Access to params,query strings,url parts etc
+=>Express has a router so we can store routes in seperate files and export
+=> We can parse incoming data with body parse
+
+
+//Express MiddleWare
+
+==> Middle ware functions are functions that have access to the requests and response object.
+==> Express has built in middleware but middleware also comes from 3rd party packages as well as custom middleware
+
+x=> Execute any code
+x=> MAke changes to the request/response objects
+x=> End response Cycle
+x=> Call next middleware in the stack
+
+
+//Template Engine => Express-HandleBars 
+for form Handling
